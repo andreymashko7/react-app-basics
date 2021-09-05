@@ -81,7 +81,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <button onClick={fetchPosts}> Get posts</button>
+      {/* <button onClick={fetchPosts}> Get posts</button> */}
       <MyButton style={{ marginTop: "30px" }} onClick={() => setModal(true)}>
         Create user
       </MyButton>

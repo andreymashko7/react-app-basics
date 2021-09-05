@@ -1,8 +1,10 @@
 import { useHistory } from "react-router-dom";
 import MyButton from "./UI/button/MyButton";
+import React from "react";
 
 export default function PostItem(props) {
   const router = useHistory();
+
   return (
     <div className="post">
       <div className="post-content">
