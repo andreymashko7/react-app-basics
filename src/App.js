@@ -1,5 +1,5 @@
 import { AuthContext } from "./context/index";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Navbar from "./components/UI/Navbar/Navbar";
@@ -39,10 +39,10 @@ export default function App() {
 
   return (
     <AuthContext.Provider value={{ isAuth, setIsAuth, isLoading }}>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <AppRouter />
-      </BrowserRouter>
+      </HashRouter>
     </AuthContext.Provider>
   );
 }
